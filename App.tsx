@@ -12,7 +12,7 @@ import {
 import AppLoading from 'expo-app-loading';
 
 
-import { DashBoard } from './src/DashBoard';
+import { DashBoard } from './src/screens/DashBoard';
 import theme from './src/global/styles/theme';
 
 export default function App() {
