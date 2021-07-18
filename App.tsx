@@ -12,7 +12,7 @@ import {
 import AppLoading from 'expo-app-loading';
 
 
-import { DashBoard } from './src/screens/DashBoard';
+import { Register } from './src/screens/Register';
 import theme from './src/global/styles/theme';
 
 export default function App() {
@@ -30,7 +30,7 @@ export default function App() {
   return (
 
     <ThemeProvider theme={theme}>
-      <DashBoard />
+      <Register />
     </ThemeProvider>
 
   );
