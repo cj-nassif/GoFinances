@@ -21,7 +21,7 @@ import {
     TransactionType,
 } from './styles';
 
-import { Input } from '../../components/Form/Input';
+
 import { InputForm } from '../../components/Form/InputForm';
 import { Button } from '../../components/Form/Button';
 import { TransactionTypeButton } from '../../components/Form/TransactionTypeButton';
@@ -75,6 +75,7 @@ export function Register() {
     }
 
     function handleCloseSelectCategoryModal() {
+
         setCategoryModalOpen(false)
     }
 
