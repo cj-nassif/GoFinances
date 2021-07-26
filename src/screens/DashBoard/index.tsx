@@ -65,7 +65,7 @@ export function DashBoard() {
         const lastTransaction = new Date(Math.max.apply(Math, collection
             .filter(transaction => transaction.type === 'positive')
             .map(transaction => new Date(transaction.date).getTime())))
-        console.log(lastTransaction)
+
         return `${lastTransaction.getDate()} de ${lastTransaction.toLocaleString('pt-BR', { month: 'long' })}`;
 
 
@@ -125,7 +125,7 @@ export function DashBoard() {
 
         const total = entriesTotal - expensiveTotal;
 
-        console.log(transaction)
+
         setHighLightData({
             entries: {
                 amount: entriesTotal.toLocaleString('pt-BR', {
@@ -159,7 +159,7 @@ export function DashBoard() {
          }
          deleteAll()*/
         loadTransactions()
-        console.log(highLightData)
+
 
     }, []);
 
