@@ -4,6 +4,7 @@ import 'intl/locale-data/jsonp/pt-BR';
 
 import React from 'react';
 
+import { StatusBar } from 'react-native';
 
 import { ThemeProvider } from 'styled-components/native';
 
@@ -37,7 +38,10 @@ export default function App() {
 
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-
+        <StatusBar
+          barStyle='light-content'
+          translucent
+          backgroundColor={theme.colors.primary} />
         <AppRoutes />
       </NavigationContainer>
     </ThemeProvider>
