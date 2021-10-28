@@ -19,8 +19,12 @@ import {
 
 import AppLoading from 'expo-app-loading';
 
+import { SignIn } from './src/screens/SignIn';
+
 import { AppRoutes } from './src/routes/app.routes';
 import theme from './src/global/styles/theme';
+
+import { AuthProvider } from './src/hooks/auth';
 
 export default function App() {
 
@@ -40,9 +44,10 @@ export default function App() {
       <NavigationContainer>
         <StatusBar
           barStyle='light-content'
-          translucent
           backgroundColor={theme.colors.primary} />
-        <AppRoutes />
+        <AuthProvider>
+          <SignIn />
+        </AuthProvider>
       </NavigationContainer>
     </ThemeProvider>
 
