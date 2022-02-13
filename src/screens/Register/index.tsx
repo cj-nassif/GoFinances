@@ -184,6 +184,7 @@ export function Register() {
                         <CategorySelectButton
                             title={category.name}
                             onPress={handleOpenSelectCategoryModal}
+                            testID='button-category'
                         />
                     </Fields>
                     <Button
@@ -193,6 +194,7 @@ export function Register() {
                 </Form>
                 <Modal
                     visible={categoryModalOpen}
+                    testID='modal-category'
                 >
                     <CategorySelect
                         category={category}
